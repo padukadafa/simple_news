@@ -29,7 +29,7 @@ void main() {
   ];
   setUp(() {
     mockRemoteDataSource = MockNewsRemoteDataSource();
-    repository = NewsRepositoryImpl(remoteDataSource: mockRemoteDataSource);
+    repository = NewsRepositoryImpl(mockRemoteDataSource);
   });
 
   group("Get News", () {
